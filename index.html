@@ -6,68 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">   -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
-    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel = "stylesheet" type = "text/css" href = "gvstylez.css">
 
+     <!-- Navbar Start -->
     <title>Latitude</title>
-    <style> 
-        /* CSS style for Boxes */ 
-        
+    <style>         
     </style> 
   </head>
   <body>
-      <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">Latitude</a>
+            <nav class = "navbar navbar-expand-lg navbar-light">
+                <a class = "navbar-brand-gv"  href = "index.html">Latitude</a>
+                <button class = "navbar-toggler border border-white" type = "button" data-toggle="collapse" data-target = "#navbarNavDropdown"
+                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+            <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
+            
+                <ul class = "navbar-nav ml-auto">
+                    <li class = "nav-item dropdown">
+                        <a class = "nav-link dropdown-toggle" href = "#" id = "navbarNavDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Plots</a>
+                        <div class = "navy">
+                        <div class = "dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                            <a class = "dropdown-item" href = "maxtemp.html"> Max Temperature</a>
+                            <a class = "dropdown-item" href = "humidity.html"> Humidity</a>
+                            <a class = "dropdown-item" href = "cloudiness.html"> Cloudiness</a>
+                            <a class = "dropdown-item" href = "windspeed.html"> Wind Speed</a>
+                        </div> 
+                      </div>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "comp.html"> Comparison</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "data.html"> Data</a>
+                    </li>
+                </ul>
+              
             </div>
-            <!--<ul class="nav navbar-nav">-->
-            <ul class="nav navbar-nav navbar-right">
-              <li ><a  class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Max Temperature</a></li>
-                    <li><a href="#">Humidity</a></li>
-                    <li><a href="#">Cloudiness</a></li>
-                    <li><a href="#">Wind Speed</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Comparison</a></li>
-              <li><a href="#">Data</a></li>
-            </ul>
-          </div>
-        </nav>
-    
+          </nav>
+ <!-- Navbar End -->
 
-    <div class="row">
-        <div class="col-md-5" >
-          <h3>Summary: Latitude vs. X</h3>
-          <IMG SRC="Fig1.png" ALIGN="left" style=" height:200px;width:200px;"/>
-          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To 
-            accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on 
-          over 500 cities </p>
-          <br><br>
-          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors
-            we looked at included temoerature, cloudiness, windspeed and humidity. This site provides the source data and 
-          visualizations created as part of the analysis, as well as explanations of any trends and correlations identified
-          </p>
-        </div>
-        <div class="col-md-4 offset-md-3"><h3>Visualizations</h3>
-          <div class="row">
-            <div class="col-md-2"><IMG SRC="Fig1.png" style=" height:100px;width:100px;"/></div>
-            <div class="col-md-2"><IMG SRC="Fig2.png" style=" height:100px;width:100px;"/></div>
-          </div>
-          <div class="row">
-            <div class="col-md-2"><IMG SRC="Fig3.png" style=" height:100px;width:100px;"/></div>
-            <div class="col-md-2"><IMG SRC="Fig4.png" style=" height:100px;width:100px;"/></div>
-          </div>
+ <!-- Start Page Content -->
+
+  <!-- Left Box -->
+
+ <div class="row">
+    <div class="col-md-8">
+      <div class="div1">
+        <h1 class="div-title">Summary: Latitude vs. X</h1>
+        <hr>
+        <img src="Resources/assets/images/Fig1.png" alt="Figure 1" ALIGN="left" class="img-lg"/>
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap AP to assemble a dataset on over 500 cities.</p>  
+        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.  Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>  
+      </div>
+    </div>
+
+     <!-- Right Box -->
+
+    <div class="col-md-4">
+        <div class="div1">
+          <h1 class="div-title">Visualizations</h1>
+          <hr>
+          <a href="maxtemp.html"><img src="Resources/assets/images/Fig1.png" class="img-sm"></a>
+          <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="img-sm"></a>
+          <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="img-sm"></a>
+          <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" class="img-sm"></a>
         </div>
       </div>
+    </div>
 
+ 
+    <!-- End Page Content -->
+
+
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <footer>
+        <div class = "footer"> Copyright &copy; G-Money Corp</div>
+    </footer>
   </body>
 </html>
