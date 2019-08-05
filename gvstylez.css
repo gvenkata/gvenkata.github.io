@@ -70,3 +70,7 @@ tr.found{
     background-color: rgb(0, 33, 68);
     color: #4cbb17;
   }
+
+  th, td { 
+    padding: 20px; 
+} 
