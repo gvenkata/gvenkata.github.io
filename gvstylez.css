@@ -1,11 +1,12 @@
 .div-title  {
     color: rgb(0, 33, 68);
     font-family: "Georgia", Georgia, serif;
-    font-weight: bold
+    font-weight: bold;
+    text-align: center;
   }
 
 .div1 {
-    height: 700px;
+    height: auto;
     padding: 10px;
     margin: 20px;
     color: rgb(0, 33, 68);
@@ -32,6 +33,11 @@
   .img-lg {
     width:500px;
     height:500px;
+  }
+
+  .img-med {
+    width:400px;
+    height:400px;
   }
 
   .img-sm {
